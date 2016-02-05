@@ -15,10 +15,10 @@ $sh start_docker.sh
 <p>
 You will see 3 directories created in you cloned folder. 
 These are mounted when you stop/start container to maintain data persistent.
-
-ssh - Contain authorized_file      
-gitolite  - Configs dir
-repos  - Very important - you code repositories are stored here.
+<br>
+<li>ssh - Contain authorized_file      
+<li>gitolite  - Configs dir
+<li>repos  - Very important - you code repositories are stored here.
 </p>
 
 ###How to manage and work?###
