@@ -6,7 +6,7 @@ Clone this gitolite-docker repo.
 
 $ssh-keygen -t rsa -f gitadmin
 
-Build image
+###Build image###
 $docker build -t gitolite-docker . 
 
 ###Start Container###
@@ -23,14 +23,14 @@ These are mounted when you stop/start container to maintain data persistent.
 
 ###How to manage and work?###
 
-####ADMIN#############
+####ADMIN####
 
+<pre><code>
 $ cat  /home/ashok/.ssh/config 
 HOST 192.168.10.201
 USER git
 port 2222
 IdentityFile /home/ashok/gitolite-docker/gitadmin
-<pre><code>
 $ ssh -p 2222  git@192.168.10.201 info
 hello admin, this is git@28a283388d4c running gitolite3 v3.6.4-19-g8de9b8d on git 1.9.1
 
