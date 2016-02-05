@@ -1,6 +1,5 @@
 # Docker file to build and run consul and consul template
 FROM ubuntu:trusty
-#FROM pipline/consul-svr
 
 RUN apt-get update && apt-get install -y sudo openssh-server git
 RUN locale-gen en_US.UTF-8
@@ -10,13 +9,10 @@ RUN mkdir /var/run/sshd
 
 RUN adduser --system --group --shell /bin/sh git
 RUN su git -c "mkdir /home/git/bin"
-#RUN su git -c "mkdir /home/git/.ssh"
-# Addind volume to repositories directory
 ADD gitadmin.pub /home/git/admin.pub
 
 RUN cd /home/git; su git -c "git clone git://github.com/sitaramc/gitolite"
 RUN cd /home/git; su git -c "gitolite/install -ln"
-#RUN cd /home/git; su git -c "bin/gitolite setup -pk admin.pub"
 # prevent the perl warning
 RUN sed  -i 's/AcceptEnv/# \0/' /etc/ssh/sshd_config
 
