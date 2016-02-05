@@ -30,7 +30,7 @@ HOST 192.168.10.201
 USER git
 port 2222
 IdentityFile /home/ashok/gitolite-docker/gitadmin
-
+<pre><code>
 $ ssh -p 2222  git@192.168.10.201 info
 hello admin, this is git@28a283388d4c running gitolite3 v3.6.4-19-g8de9b8d on git 1.9.1
 
@@ -39,7 +39,8 @@ hello admin, this is git@28a283388d4c running gitolite3 v3.6.4-19-g8de9b8d on gi
 
 $ git clone git@192.168.10.201:gitolite-admin
 $ cd gitolite-admin
-#You will find conf and keydir - Update config, add your user keys and commit!
+</pre></code>
+<p>You will find conf and keydir - Update config, add your user keys and commit!</p>
 ########################
 
 ----E.g of another user----
