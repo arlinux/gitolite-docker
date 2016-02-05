@@ -1,4 +1,4 @@
 #!/bin/bash
 
-
-docker run -d --name gitolite-docker -p 2222:22 --volume /home/ashok/gitolite-docker/repos:/home/git/repositories  --volume /home/ashok/gitolite-docker/ssh:/home/git/.ssh  --volume /home/ashok/gitolite-docker/gitolite:/home/git/.gitolite gitolite-docker
+pth=$(echo $HOME)
+docker run -d --name gitolite-docker -p 2222:22 --volume $pth/gitolite-docker/repos:/home/git/repositories  --volume $pth/gitolite-docker/ssh:/home/git/.ssh  --volume $pth/gitolite-docker/gitolite:/home/git/.gitolite gitolite-docker
