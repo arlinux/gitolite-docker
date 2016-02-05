@@ -41,8 +41,8 @@ $ git clone git@192.168.10.201:gitolite-admin
 $ cd gitolite-admin
 <p><b>You will find conf and keydir - Update config, add your user keys and commit!</p>
 </pre></code>
+####E.g of another user####
 <pre><code>
-----E.g of another user----
 $ cat ~/.ssh/config 
 HOST 192.168.10.201
 USER git
