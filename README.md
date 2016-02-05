@@ -39,10 +39,9 @@ hello admin, this is git@28a283388d4c running gitolite3 v3.6.4-19-g8de9b8d on gi
 
 $ git clone git@192.168.10.201:gitolite-admin
 $ cd gitolite-admin
+<p><b>You will find conf and keydir - Update config, add your user keys and commit!</p>
 </pre></code>
-<p>You will find conf and keydir - Update config, add your user keys and commit!</p>
-########################
-
+<pre><code>
 ----E.g of another user----
 $ cat ~/.ssh/config 
 HOST 192.168.10.201
@@ -55,4 +54,5 @@ hello swetha, this is git@28a283388d4c running gitolite3 v3.6.4-19-g8de9b8d on g
 
  R W	pip
  R W	testing
-#########################
+</pre></code>
+
