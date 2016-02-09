@@ -1,4 +1,4 @@
-# Docker file to build and run consul and consul template
+# Docker file to build gitolite on a docker image
 FROM ubuntu:trusty
 
 RUN apt-get update && apt-get install -y sudo openssh-server git
