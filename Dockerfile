@@ -1,4 +1,4 @@
-# Docker file to build gitolite on a docker image
+# Docker file to build gitolite image
 FROM ubuntu:trusty
 
 RUN apt-get update && apt-get install -y sudo openssh-server git
