@@ -2,7 +2,7 @@
 
 Clone this gitolite-docker repo.
 
-*Generate ssh keypair. This will generate a private key file named gitadmin and a public key named: gitadmin.pub*
+*Generate ssh keypair. This will generate a private key file named gitadmin and a public key file gitadmin.pub*
 
 $ssh-keygen -t rsa -f gitadmin
 
@@ -10,15 +10,15 @@ $ssh-keygen -t rsa -f gitadmin
 $docker build -t gitolite-docker . 
 
 ###Start Container###
-$sh start_docker.sh
+$sh start_container.sh
 
 <p>
-You will see 3 directories created in you cloned folder. 
-These are mounted when you stop/start container to maintain data persistent.
+You will see 3 directories created. 
+These are mounted when you stop/start container to maintain data permanently. 
 <br>
 <li>ssh - Contain authorized_file      
 <li>gitolite  - Configs dir
-<li>repos  - Very important - you code repositories are stored here.
+<li>repos  - Very important - your code repositories are stored here.
 </p>
 
 ###How to manage and work?###
